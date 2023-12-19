@@ -10,7 +10,7 @@ int main(){
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     wstring word;
-    cout << "Ââåäèòå ñëîâî:" << endl;
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã«Ã®Ã¢Ã®:" << endl;
     wcin >> word;
     int lengthWord = word.length();
     char cryptWord[lengthWord], copyWord[lengthWord];
@@ -27,7 +27,7 @@ int main(){
  
     while (control == false){
         help = false;
-        cout << endl << "Ââåäèòå áóêâó: ";
+        cout << endl << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¡Ã³ÃªÃ¢Ã³: ";
         cin >> letter;
         for (int i = 0; i < lengthWord; i++){
             if (copyWord[i] == letter){
@@ -41,7 +41,7 @@ int main(){
         }
 
         else
-        cout << endl << "Íåò òàêîé áóêâû!" << endl ;        
+        cout << endl << "ÃÃ¥Ã² Ã²Ã ÃªÃ®Ã© Ã¡Ã³ÃªÃ¢Ã»!" << endl ;        
  
         for (int i = 0; i < lengthWord; i++){
             if (cryptWord[i] == '_'){
@@ -53,7 +53,7 @@ int main(){
         }
     }
 
-    cout << endl <<"Ïîçäðàâëÿåì! Âû óãàäàëè ñëîâî!";
+    cout << endl <<"ÃÃ®Ã§Ã¤Ã°Ã Ã¢Ã«Ã¿Ã¥Ã¬! Ã‚Ã» Ã³Ã£Ã Ã¤Ã Ã«Ã¨ Ã±Ã«Ã®Ã¢Ã®!";
 
     return 0;
 }
